@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoinformatika - Multimediální systém</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Geoinformatika na VŠB-TU Ostrava</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="overview.html">Přehled</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Vítejte v multimediálním systému!</h2>
+        <p>Tento systém vás seznámí s fascinujícím světem geoinformatiky. Prozkoumejte jednotlivé sekce, abyste se dozvěděli více.</p>
+        <button onclick="playWelcome()">Přehrát uvítání</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Geoinformatika, VŠB-TU Ostrava</p>
+    </footer>
+
+    <audio id="welcome-audio" src="audio/welcome.mp3"></audio>
+    <script>
+        function playWelcome() {
+            document.getElementById('welcome-audio').play();
+        }
+    </script>
+</body>
+</html>
